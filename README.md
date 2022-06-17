@@ -64,10 +64,69 @@ core.ignorecase=true
 
 ```
 
-
-
-#### Agregando archivos al repositorio local
+#### Creando el primer commit
 
 ```git
+# listar contenido de la carpeta del proyecto
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ ls
+README.md  index.html
 
+# agregar todos los archivos modificados
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ git add .
+
+# comprobar el estado del repositorio
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   index.html
+
+# realizar el commit
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ git commit -m "S01 -> E01"
+[main (root-commit) 7891b27] S01 -> E01
+ 2 files changed, 73 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 index.html
+
+
+```
+
+### Enviando los archivos del repositorio local al repositorio remoto
+
+```git
+# crear un paquete para enviar al repositorio remoto
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ git remote add origin https://github.com/jym-tech/front-bedu-test.git
+
+# enviar los archivos al repositorio remoto
+TechSupport@ti-admin MINGW64 /d/LAB/front-bedu-test (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 990 bytes | 247.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jym-tech/front-bedu-test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+```
+
+### Estructura de carpetas
+
+```bash
+D/
+└── LAB/
+    └── front-bedu-test
+        └── index.html
 ```
