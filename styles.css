@@ -3,9 +3,10 @@ body {
 }
 
 .header {
-    margin-top: 40px;
+    /* margin-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
+    margin: 40px 20px 0px;
     font-size: 0;
 }
 
@@ -41,6 +42,11 @@ body {
 
 li {
     display: inline;
+}
+
+.main {
+    margin-top: 140px;
+    text-align: center;
 }
 
 h1 {
