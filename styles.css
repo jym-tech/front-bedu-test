@@ -67,6 +67,8 @@ li {
 
 h1 {
     color: #46484c;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -74,6 +76,11 @@ p {
     color: #8b8b8bcc;
     font-family: Verdana;
     font-size: 20px;
+}
+
+.text-info {
+    font-family: "Audiowide", sans-serif;
+    font-size: 25px;
 }
 
 button {
