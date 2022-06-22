@@ -105,7 +105,7 @@ img {
 .publish h3 {
     font-family:'Franklin Gothic Medium';
     font-size: 40px;
-    line-height: 0;
+    line-height: 1;
     color: #025157;
 }
 
@@ -129,4 +129,11 @@ img {
     padding: 14px 12px 14px 12px;
     border: 1;
     border-radius: 5px;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
 }
