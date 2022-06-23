@@ -156,3 +156,89 @@ img {
     right: 0;
     background-color: #fffbf7;
 }
+
+.success {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: #a1d683;
+}
+
+.success .text-view {
+    flex: 2;
+    padding: 5%;
+    margin: 20px;
+}
+
+.success .text-view h2 {
+    font-family: 'Courier New';
+    font-size: 40px;
+    color: #025157;
+    line-height: 1.5;
+}
+
+.success .text-view p {
+    font-size: 15px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.success .text-view button {
+    padding: 12px;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.success .text-view img {
+    width: 500px;
+}
+
+.success .stories {
+    flex: 1;
+    margin: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.success .stories .card-image {
+    position: relative;
+    margin-top: 0;
+}
+
+.success .stories .card-image .card-company {
+    position: absolute;
+    background-color: #f9da73;
+    border-radius: 80%;
+    width: 40%;
+    height: 40%;
+    bottom: -40px;
+    right: 50px;
+    max-width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.success .stories .card-body {
+    padding: 40px;
+}
+
+.success .stories .card-body h4 {
+    font-family:'Arial Narrow Bold', sans-serif;
+    color: #025157;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.success .stories .card-body h3 {
+    font-size: 30px;
+    font-family: Arial;
+    margin-bottom: 30px;
+}
+
+.success .stories .card-footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
