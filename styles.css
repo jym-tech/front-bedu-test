@@ -61,7 +61,7 @@ li {
 }
 
 .main {
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
 }
 
@@ -147,4 +147,12 @@ img {
 .explanatory-video img {
     width: 120px;
     margin-top: 10px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
 }
