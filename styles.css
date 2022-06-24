@@ -308,3 +308,75 @@ img {
   margin-top: 0;
   height: 100%;
 }
+
+.matcha-work {
+    text-align: center;
+    background-color: #fffbf7;
+    padding: 5%;
+}
+
+.matcha-work .matcha-title {
+    font-family: Verdana;
+    color: #025157;
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.matcha-work button {
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.matcha-work .matcha-articles {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.matcha-work .matcha-articles .article {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.matcha-work .matcha-articles .article .images-article {
+    height: 350px;
+    position: relative;
+    margin-top: 40px;
+}
+
+.matcha-work .matcha-articles .article .images-article .card-image-icon {
+    position: absolute;
+    width: 60px;
+    right: 5%;
+    top: 20%;
+}
+
+.matcha-work .matcha-articles .article .text-article {
+    padding: 40px 20px 40px;
+}
+
+.matcha-work .matcha-articles .article .text-article h3 {
+    font-family: 'Segoe UI';
+    color:#025157;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.matcha-work .matcha-articles .article .text-article p {
+    font-size: 16px;
+    color: #46484c;
+    line-height: 1.5;
+}
+
+.matcha-work .matcha-articles .article .text-article a {
+    font-size: 16px;
+    font-family: Arial;
+    line-height: 1.8;
+    text-decoration: none;
+}
