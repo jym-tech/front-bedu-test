@@ -242,3 +242,8 @@ img {
     justify-content: center;
     padding: 50px;
 }
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
