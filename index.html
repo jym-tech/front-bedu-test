@@ -2,6 +2,7 @@
 <html>
     <head>
         <!-- Aqui va la informacion importante pero no visible en el navegador -->
+        <meta charset="utf-8">
         <title>
             Matcha WebPage
         </title>
@@ -13,24 +14,94 @@
         </style>
         -->
         <!-- vinculo con archivo CSS -->
-        <link rel="stylesheet" href="styles.css" type="text/css"> 
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <!-- fuentes -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
     </head>
     <body>
         <!-- Esto es lo que se vera en el navegador -->
-        <h1> Build your blog. Build your bussiness. </h1>
-        <p class="text-title">
-            Instantly publish articles, drive more traffic, grow your email list, 
-            and see your blog's impact on sales
-        </p>
-        <form>
-            <input type="email" />
-            <button class="btn-submit" type="submit">
-                Try it now &rArr;
-            </button>
-        </form>
-        <p class="text-promo"> Start publishing today with a <strong>free 7-day trial.</strong> </p>
-        <p class="text-info"> <strong>No credit card</strong> required. </p>
-        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="capterra image" />
+        <section class="fixed-header">
+            <header class="header">
+                <!-- Logo con el link a la página principal -->
+                <a href="/" class="logo">
+                    <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="imagen-logo-matcha"/>
+                </a>
+                <!-- Menu de navegacion -->
+                <nav class="navbar">
+                    <ul>
+                        <li class="menu-item">Platform</li>
+                        <li class="menu-item">Pricing</li>
+                        <li class="menu-item">Customers</li>
+                        <li class="menu-item">Resources</li>
+                        <li class="menu-item">About</li>
+                    </ul>
+                </nav>
+                <!-- Contenedor de acciones de usuario -->
+                <div class="actions">
+                    <a>Sign In</a>
+                    <button>Start Free Trial</button>
+                </div>
+            </header>
+        </section>
+        <section class="main">
+            <h1> Build your blog. Build your bussiness. </h1>
+            <p class="text-title">
+                Instantly publish articles, drive more traffic, grow your email list, 
+                and see your blog's impact on sales
+            </p>
+            <form>
+                <input type="email" />
+                <button class="btn-submit" type="submit">
+                    Try it now &rArr;
+                </button>
+            </form>
+            <p class="text-promo"> Start publishing today with a <strong>free 7-day trial.</strong> </p>
+            <p class="text-info"> <strong>No credit card</strong> required. </p>
+            <img class="img-capterra" src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="capterra image" />
+            <img class="img-matcha" src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png" alt="matcha image"/>
+        </section>
+        <!-- Contenedor para el video -->
+        <section class="promo">
+            <article class="explanatory-video">
+                <video 
+                    controls
+                    poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
+                >
+                    <source
+                        type="video/webm"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+                    />
+                    <source
+                        type="video/mp4"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+                    />
+                </video>
+                <img 
+                    src="https://images.vexels.com/media/users/3/206269/isolated/preview/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png" 
+                    alt="See how it works"
+                />
+            </article>
+
+            <article class="publish">
+                <h3>Publish to your blog in minutes, not hours.</h3>
+                <p>
+                    Your blog is your most powerful asset to build, engage, and retain a loyal
+                    audience. But you don't have hours to create content that may or may not
+                    work. With Matcha, instantly publish from our library of 10,000+
+                    professionally written articles and build your email list faster with our
+                    powerful conversion tool.
+                </p>
+                <form>
+                    <p>Start publishing today:</p>
+                    <div>
+                        <input type="email" placeholder="Enter email" />
+                        <button>Start My Trial</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+
     </body>
 </html>
