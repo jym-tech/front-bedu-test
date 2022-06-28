@@ -68,7 +68,7 @@ li {
 h1 {
     color: #46484c;
     font-family: "Sofia", sans-serif;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -386,6 +386,10 @@ img {
     .navbar,
     .actions {
         display: none;
+    }
+
+    h1 {
+        font-size: 30px;
     }
   }
   
