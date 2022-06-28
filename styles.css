@@ -395,6 +395,20 @@ img {
     h1 {
         font-size: 30px;
     }
+
+    .publish > form {
+        flex-direction: column;
+    }
+
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+        width: 65%;
+      }
+
   }
   
   /** dispositivos pequeños en vista landscape (horizontal) */
