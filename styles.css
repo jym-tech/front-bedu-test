@@ -381,10 +381,7 @@ img {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar,
-    .actions {
-        display: none;
-    }
+    
 
     .main {
         margin-top: 130px;
@@ -436,6 +433,112 @@ img {
       .feature-image {
         display: none;
     }
+
+    .success {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .matcha-work .matcha-title {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 5%;
+    }
+
+    .matcha-work .matcha-description {
+        font-size: 15px;
+    }
+
+    .matcha-work button {
+        font-size: 14px;
+        padding: 14px;
+        margin-top: 10px;
+    }
+
+    .matcha-work .matcha-articles {
+        grid-template: repeat(4, 1fr) / 1fr;
+        margin-top: 40px;
+        grid-row-gap: 20px;
+    }
+
+    .matcha-work .matcha-articles .article {
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    
+    .matcha-work .matcha-articles .article .images-article {
+        height: 200px;
+        margin-top: 20px;
+    }
+    
+    .matcha-work .matcha-articles .article .images-article .card-image-icon {
+        display: none;
+    }
+
+    .matcha-work .matcha-articles .article .text-article {
+        padding: 20px 10px 20px;
+    }
+    
+    .matcha-work .matcha-articles .article .text-article h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.8;
+    }
+    
+    .matcha-work .matcha-articles .article .text-article p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .matcha-work .matcha-articles .article .text-article a {
+        font-size: 14px;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+
+    .success .text-view h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+    .success .stories {
+        margin: 20px 100px;
+    }
+
+    .success .stories .card-body {
+        padding: 20px;
+    }
+    
+    .success .stories .card-body h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .success .stories .card-body h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .success .stories .card-body p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .success .stories .card-footer {
+        padding: 20px;
+    }
+
+    .mt-0 {
+        margin-top: 0 !important;
+    }
+      
+    .px-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
 
   }
   
