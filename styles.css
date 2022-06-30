@@ -29,6 +29,7 @@ body {
 }
 
 .navbar {
+    background-color: #fffbf7;
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -155,92 +156,156 @@ img {
     background-color: #fffbf7;
 }
 
-.success {
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
-    margin: 20px;
-    background-color: #a1d683;
-}
-
-.success .text-view {
+    justify-content: space-around;
+  }
+  
+  .success-stories .overview {
     flex: 2;
-    padding: 5%;
-    margin: 20px;
-}
-
-.success .text-view h2 {
-    font-family: 'Courier New';
-    font-size: 40px;
+    padding-right: 100px;
+  }
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
     color: #025157;
-    line-height: 1.5;
-}
-
-.success .text-view p {
-    font-size: 15px;
+  }
+  
+  .success-stories .overview p {
     color: #343434;
+    font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 50px;
-}
-
-.success .text-view button {
-    padding: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
     border-radius: 8px;
-    height: 50px;
-}
-
-.success .text-view img {
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
     width: 500px;
-}
+    max-width: 100%;
+  }
 
-.success .stories {
-    flex: 1;
-    margin: 100px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.success .stories .card-image {
+  /* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+  .success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
     position: relative;
-    margin-top: 0;
-}
-
-.success .stories .card-image .card-company {
-    position: absolute;
-    background-color: #f9da73;
-    border-radius: 80%;
-    width: 40%;
-    height: 40%;
-    bottom: -40px;
-    right: 50px;
-    max-width: 30%;
+    padding: 40px 1rem 1rem;
+  }
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .results {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.success .stories .card-body {
-    padding: 40px;
-}
-
-.success .stories .card-body h4 {
-    font-family:'Arial Narrow Bold', sans-serif;
-    color: #025157;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.success .stories .card-body h3 {
-    font-size: 30px;
-    font-family: Arial;
-    margin-bottom: 30px;
-}
-
-.success .stories .card-footer {
+  }
+  
+  .success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .card .card-body .results p {
+    margin: 0;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+  .success-stories .card .card-body .card-circle {
     display: flex;
-    justify-content: center;
-    padding: 50px;
-}
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+  }
 
+  .success-stories .card .card-body .card-circle.summit {
+    background-color: #81d742;
+    border: 5px solid #81d742;
+  }
+  
+  .success-stories .card .card-body .card-circle.mambe {
+    background-color: #ef7179;
+    border: 5px solid #ef7179;
+  }
+  
+  /* Los círculos deben recibir la imagen y ajustarla al tamaño */
+  .success-stories .card .card-body .card-circle.everly img,
+  .success-stories .card .card-body .card-circle.summit img,
+  .success-stories .card .card-body .card-circle.mambe img {
+      object-fit: contain;
+      width: 100%;
+  }
 .features {
     background-color: #025157;
     padding: 5%;
@@ -497,37 +562,8 @@ img {
         text-decoration: none;
     }
 
-    .success .text-view h2 {
-        font-size: 30px;
-        line-height: 1.2;
-        font-weight: 600;
-    }
-
-    .success .stories {
-        margin: 20px 100px;
-    }
-
-    .success .stories .card-body {
-        padding: 20px;
-    }
-    
-    .success .stories .card-body h4 {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .success .stories .card-body h3 {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .success .stories .card-body p {
-        font-size: 15px;
-        margin-bottom: 30px;
-    }
-
-    .success .stories .card-footer {
-        padding: 20px;
+    .success-stories {
+        flex-direction: column;
     }
 
     .mt-0 {
@@ -549,6 +585,15 @@ img {
   
   /** dispositivos medianos (tablets) */
   @media (min-width: 768px) and (max-width: 991px) {
+    .actions,
+    .navbar {
+        text-align: center;
+    }
+
+    .success-stories {
+        flex-direction: column;
+        padding: 5% 15px;
+      }
     
   }
   
