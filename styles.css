@@ -184,26 +184,28 @@ img {
   }
   
   .success-stories .overview button {
-    font-size: 14px;
-    padding: 12px 12px 6px 12px;
-    border-radius: 8px;
-    height: 45px;
-    font-weight: 600;
-    margin-left: 0;
-  }
+      font-size: 14px;
+      padding: 12px 12px 6px 12px;
+      border-radius: 8px;
+      height: 45px;
+      font-weight: 600;
+      margin-left: 0;
+    }
   
   .success-stories .overview img {
-    width: 500px;
-    max-width: 100%;
-  }
+      width: 500px;
+      max-width: 100%;
+    }
+    
+  
 
   /* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
-.success-stories .card {
-    max-width: 370px;
-    width: 100%;
-    min-height: 600px;
-    margin: 0 auto;
-  }
+    .success-stories .card {
+        max-width: 370px;
+        width: 100%;
+        min-height: 600px;
+        margin: 0 auto;
+    }
   
   /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
   .success-stories .card img {
